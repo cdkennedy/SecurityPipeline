@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityPipeline", "SecurityPipeline\SecurityPipeline.csproj", "{9575D6D3-AEE8-49DE-B622-42B750293EF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationKatana", "AuthenticationKatana\AuthenticationKatana.csproj", "{2E9C7524-E31D-49E1-90DB-834B309840F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationKatanaClient", "AuthenticationKatanaClient\AuthenticationKatanaClient.csproj", "{3E98ADCF-A292-441D-9244-CE8D7F616B84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9575D6D3-AEE8-49DE-B622-42B750293EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9575D6D3-AEE8-49DE-B622-42B750293EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9575D6D3-AEE8-49DE-B622-42B750293EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9C7524-E31D-49E1-90DB-834B309840F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9C7524-E31D-49E1-90DB-834B309840F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9C7524-E31D-49E1-90DB-834B309840F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9C7524-E31D-49E1-90DB-834B309840F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
