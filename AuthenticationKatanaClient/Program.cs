@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Thinktecture.IdentityModel;
 
 namespace AuthenticationKatanaClient
 {
@@ -11,12 +12,21 @@ namespace AuthenticationKatanaClient
 	{
 		static void Main(string[] args)
 		{
-			var client = new HttpClient
+			var handler = new WebRequestHandler();
+			handler.ClientCertificates.Add(X509.CurrentUser.My.SubjectDistinguishedName("CN=clinet").First());
+
+			//var handler = new HttpClientHandler
+			//{
+				//ClientCertificateOptions = ClientCertificateOption.Automatic
+			//};
+
+			var client = new HttpClient(handler)
 			{
 				BaseAddress = new Uri("https://localhost:44301/api/")
 			};
 
 			client.SetBasicAuthentication("dom", "dom");
+
 
 			var response = client.GetAsync("identity").Result;
 			response.EnsureSuccessStatusCode();

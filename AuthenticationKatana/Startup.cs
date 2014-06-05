@@ -5,8 +5,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using AuthenticationKatana.Middleware.BasicAuthentication;
+using AuthenticationKatana.Middleware.ClientCertificates;
 using System.Threading.Tasks;
 using System.Security.Claims;
+using System.Security.Cryptography.X509Certificates;
 
 namespace AuthenticationKatana
 {
@@ -19,7 +21,10 @@ namespace AuthenticationKatana
 				"default",
 				"api/{controller}");
 
-			app.UseBasicAuthentication("Demo", ValidateUsers);
+			app.UseBasicAuthentication("Demo", ValidateUsers); 
+
+			app.UseClientCertificateAuthentication(X509RevocationMode.NoCheck);
+
 			app.UseWebApi(configuration);
 		}
 
