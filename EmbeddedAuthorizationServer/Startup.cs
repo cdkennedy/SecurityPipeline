@@ -20,7 +20,8 @@ namespace EmbeddedAuthorizationServer
 					AllowInsecureHttp = true,
 					TokenEndpointPath = new PathString("/token"),
 					AccessTokenExpireTimeSpan = TimeSpan.FromHours(8),
-					Provider = new SimpleAuthorizationServerProvider()
+					Provider = new SimpleAuthorizationServerProvider(),
+					RefreshTokenProvider = new SimpleRefreshTokenProvider()
 				});
 
 			app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
