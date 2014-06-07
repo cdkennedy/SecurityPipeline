@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationKatana", "Aut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationKatanaClient", "AuthenticationKatanaClient\AuthenticationKatanaClient.csproj", "{3E98ADCF-A292-441D-9244-CE8D7F616B84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedAuthorizationServer", "EmbeddedAuthorizationServer\EmbeddedAuthorizationServer.csproj", "{0C8CD865-5B17-434A-9125-3AF411039C18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbeddedAuthorizationClient", "EmbeddedAuthorizationClient\EmbeddedAuthorizationClient.csproj", "{BA53AB10-3D4E-457B-81F7-A7076DD3C23B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E98ADCF-A292-441D-9244-CE8D7F616B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8CD865-5B17-434A-9125-3AF411039C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8CD865-5B17-434A-9125-3AF411039C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8CD865-5B17-434A-9125-3AF411039C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8CD865-5B17-434A-9125-3AF411039C18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA53AB10-3D4E-457B-81F7-A7076DD3C23B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA53AB10-3D4E-457B-81F7-A7076DD3C23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA53AB10-3D4E-457B-81F7-A7076DD3C23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA53AB10-3D4E-457B-81F7-A7076DD3C23B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

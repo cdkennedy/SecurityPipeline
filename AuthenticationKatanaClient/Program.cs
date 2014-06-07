@@ -12,27 +12,27 @@ namespace AuthenticationKatanaClient
 	{
 		static void Main(string[] args)
 		{
-			var handler = new WebRequestHandler();
-			handler.ClientCertificates.Add(X509.CurrentUser.My.SubjectDistinguishedName("CN=clinet").First());
+			//var handler = new WebRequestHandler();
+			//handler.ClientCertificates.Add(X509.CurrentUser.My.SubjectDistinguishedName("CN=clinet").First());
 
-			//var handler = new HttpClientHandler
+			////var handler = new HttpClientHandler
+			////{
+			//	//ClientCertificateOptions = ClientCertificateOption.Automatic
+			////};
+
+			//var client = new HttpClient(handler)
 			//{
-				//ClientCertificateOptions = ClientCertificateOption.Automatic
+			//	BaseAddress = new Uri("https://localhost:44301/api/")
 			//};
 
-			var client = new HttpClient(handler)
-			{
-				BaseAddress = new Uri("https://localhost:44301/api/")
-			};
-
-			client.SetBasicAuthentication("dom", "dom");
+			//client.SetBasicAuthentication("dom", "dom");
 
 
-			var response = client.GetAsync("identity").Result;
-			response.EnsureSuccessStatusCode();
+			//var response = client.GetAsync("identity").Result;
+			//response.EnsureSuccessStatusCode();
 
-			var content = response.Content.ReadAsStringAsync().Result;
-			Console.WriteLine(content);
+			//var content = response.Content.ReadAsStringAsync().Result;
+			//Console.WriteLine(content);
 		}
 	}
 }
